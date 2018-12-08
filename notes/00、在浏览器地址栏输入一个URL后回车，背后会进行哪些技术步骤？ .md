@@ -22,4 +22,4 @@
 
 
 
-![](../images/baisc.jpg)
+![](images/baisc.jpg)
