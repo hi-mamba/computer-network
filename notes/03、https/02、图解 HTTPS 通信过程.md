@@ -11,6 +11,8 @@
 HTTPS 协议（HyperText Transfer Protocol over Secure Socket Layer）：可以理解为HTTP+SSL/TLS，
 即 HTTP 下加入 SSL 层，HTTPS 的安全基础是 SSL，因此加密的详细内容就需要 SSL，用于安全的 HTTP 数据传输。
 
+> TLS/SSL中使用了非对称加密，对称加密以及HASH算法
+
 服务端和客户端的信息传输都会通过TLS进行加密，所以传输的数据都是加密后的数据。
 具体是如何进行加密，解密，验证的，且看下图。
 
@@ -58,3 +60,8 @@ HTTPS 协议（HyperText Transfer Protocol over Secure Socket Layer）：可以�
 ### 8. 客户端解密信息
 
 客户端用之前生成的私钥解密服务段传过来的信息，于是获取了解密后的内容。整个过程第三方即使监听到了数据，也束手无策。
+
+
+## 推荐阅读
+
+- [HTTPS系列干货（一）：HTTPS 原理详解](https://zhuanlan.zhihu.com/p/27395037)
