@@ -1,4 +1,6 @@
 
+## [原文1](https://www.jianshu.com/p/283fd3db9fb2)
+## [原文2](https://www.jianshu.com/p/8f61c95c078d)
 
 # HTTP请求格式(HTTP请求报文)
 
@@ -20,6 +22,50 @@
 ![](../images/http/http_request_args.png)
 
 HTTP请求报文图
+
+## HTTP请求报文
+```http request
+
+GET / HTTP/1.1
+Host: www.baidu.com
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+Cookie: BAIDUID=4082549DEE5E64678FC46642E185D98C:FG=1; BIDUPSID=4082549DEE5E64678FC46642E185D98C; PSTM=1472215668; MCITY=-%3A; BDSFRCVID=pSFsJeCCxG3C4A5iySIze8tzxQmzvLxREDct3J; H_BDCLCKID_SF=tR38LRu8KJjEe-Kk-PnVeUFLQlbZKxJmMgkeWlbMQnTR85CGXUQVWx4_Qb6gXU-L5nT9bDOFfDL2bKKmjTL3K4LOMq5-5b0X-K5L3JD8bnjoHRjvq4bohjPy5G7eBtQm05bxohOIHRoE8M0m2ROkMtutKJjQW-nQ5HbbhCLbWDF5MIDGj50WenLHMfnXetJQ2C7WsJceHJOoDDvx0Uj5y4LdLp7xJMtJ0RT0XxOYMJKWf-c90tc05xAb04oR5b0eWJQ2QJ8BtCtKhD3P; pgv_pvi=7232093184; pgv_si=s9982430208; BDRCVFR[IzI_eUGSZP3]=mbxnW11j9Dfmh7GuZR8mvqV; BD_CK_SAM=1; PSINO=5; BD_HOME=0; H_PS_PSSID=1421_17946_21125_18559_21455_21419_21394_21378_21191_21398; BD_UPN=123253; BD_LAST_QID=17716714193052416912
+
+```
+解释：
+
+- GET / HTTP/1.1，请求起始行
+
+- GET，请求方法
+
+- /，请求URL，命名了所请求资源,或者URL路径组件的完整URL。如果直接与服务器进行对话,
+只要URL的路径组件是资源的绝对路径,通常就不会有什么问题——服务器可以假定自己是URL的主机/端口。
+
+- HTTP/1.1，请求采用的协议及版本号
+
+- Host，请求的服务器
+
+- Connection，连接方式
+
+- Upgrade-Insecure-Requests，
+
+- User-Agent，将发起请求的应用程序名称告知服务器
+
+- Accept，请求首部，是请求报文特有的。它们为服务器提供了一些额外信息,比如客户端希望接收什么类型的数据。例子中接收html，xhtml，xml等数据。
+
+- Accept-Encoding，告诉服务器能够发送哪些编码方式
+
+- Accept-Language，告诉服务器能够发送哪些语言
+
+- Cookie，Cookie信息，客户端用它向服务器传送一个令牌——它并不是真正的安全首部,但确实隐含了安全功能
+
+ 
+
 
 ## 1、请求行
 请求行包括：请求方法字段、URL字段、HTTP协议版本字段。它们用空格分隔。
