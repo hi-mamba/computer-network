@@ -135,8 +135,11 @@ Server Hello Done 通知客户端 Server Hello 过程结束。
 ### 参考资料
 
 <http://www.ruanyifeng.com/blog/2014/02/ssl_tls.html>
+
 <https://segmentfault.com/a/1190000002554673>
+
 <https://imququ.com/post/optimize-tls-handshake.html>
+
 <http://blog.csdn.net/fw0124/article/details/40983787>
 
  
