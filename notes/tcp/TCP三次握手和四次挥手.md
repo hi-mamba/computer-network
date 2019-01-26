@@ -13,7 +13,9 @@ client发送一个SYN(J)包给server，然后等待server的ACK回复，进入SY
 server接收到SYN(seq=J)包后就返回一个ACK(J+1)包以及一个自己的**SYN(K)**包，然后等待client的ACK回复，server进入SYN-RECIVED状态。
 
 ### 第三次握手
-client接收到server发回的ACK(J+1)包后，进入ESTABLISHED状态。然后根据server发来的SYN(K)包，返回给等待中的server一个ACK(K+1)包。等待中的server收到ACK回复，也把自己的状态设置为ESTABLISHED。到此TCP三次握手完成，client与server可以正常进行通信了。
+client接收到server发回的ACK(J+1)包后，进入ESTABLISHED状态。
+然后根据server发来的SYN(K)包，返回给等待中的server一个ACK(K+1)包。等待中的server收到ACK回复，也把自己的状态设置为ESTABLISHED。
+到此TCP三次握手完成，client与server可以正常进行通信了。
 
  
  
