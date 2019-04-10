@@ -21,6 +21,8 @@ TCP同时处理有关流量控制的问题，以防止快速的发送方“淹�
 
 ## OSI参考模型和TCP/IP参考模型
 
+![](../images/tcp/osi_7.jpg)
+
 OSI模型（open system interconnection reference model）是基于国际标准化组织（ISO）的建议而发展起来的，它分为如图1所示的七层。
 
 TCP/IP最初是为ARPANET网开发的网络体系结构，主要由两个重要协议即TCP协议和IP协议而得名。

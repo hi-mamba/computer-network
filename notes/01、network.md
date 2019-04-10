@@ -2,11 +2,16 @@
 # 网络协议和网络编程
 
 
-
 ##  七层
+
+OSI 7层封包解包动态图-数据在网络中的传输过程
+
+![](images/OSI7_layer_packet_unpacking_dynamic_graph_data_transmission_process_in_the_network.gif)
+
 
 物理层、数据链路层、网络层、传输层、会话层、表示层和应用层。
 
+![](images/tcp/osi_7.jpg)
 
 socket则是对TCP/IP协议的封装和应用(程序员层面上)。
 
