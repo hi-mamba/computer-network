@@ -7,6 +7,14 @@
 
 > TCP的核心是拥塞控制，目的是探测网络速度，保证传输顺畅
 
+> RTO：Retransmission TimeOut 超时重传
+
+> RTT: Round Trip Time 一个数据包从发出去到回来的时间
+
+> cwnd：Congestion Window 拥塞窗口
+
+> ssthresh：slow start threshold 缓慢启动阈值
+
 上面我们知道了，TCP通过Sliding Window来做流控（Flow Control），
 但是TCP觉得这还不够，因为Sliding Window需要依赖于连接的发送端和接收端，
 其并不知道网络中间发生了什么。
@@ -44,7 +52,7 @@ TCP这个协议就会拖垮整个网络**。这是一个灾难。
 首先，我们来看一下TCP的慢热启动。慢启动的意思是，刚刚加入网络的连接，一点一点地提速，
 不要一上来就像那些特权车一样霸道地把路占满。新同学上高速还是要慢一点，不要把已经在高速上的秩序给搞乱了。
 
-慢启动的算法如下(cwnd全称Congestion Window)：
+慢启动的算法如下(cwnd全称Congestion Window:拥塞窗口)：
 
 1）连接建好的开始先初始化cwnd = 1，表明可以传一个MSS大小的数据。
 
