@@ -20,7 +20,7 @@ DNS( Domain Name System)是域名系统的英文缩写，
 
 DNS就是这样的一位“翻译官”，它的基本工作原理可用下图来表示
 
-![](images/DNS.jpg)
+![](../images/DNS.jpg)
 
 ## DNS使用的协议
 
@@ -59,7 +59,7 @@ DNS的规范规定了2种类型的DNS服务器，一个叫主DNS服务器，一�
 ## DNS的查询过程
 
 
-![](images/DNS_search.jpg)
+![](../images/DNS_search.jpg)
 
 - 在浏览器中输入www.qq.com域名，操作系统会先检查自己本地的hosts文件是否有这个网址映射关系，
 如果有，就先调用这个IP地址映射，完成域名解析。
