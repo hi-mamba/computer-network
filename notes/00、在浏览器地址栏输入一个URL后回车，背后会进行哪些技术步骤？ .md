@@ -3,6 +3,8 @@
 
 # 在浏览器地址栏输入一个URL后回车，背后会进行哪些技术步骤？
 
+![image](https://user-images.githubusercontent.com/7867225/155061188-0765e0cb-54b5-4808-a61b-d29c7ee47921.png)
+
 
 ## 客户端（当你点击按钮时发生了什么？）
  
