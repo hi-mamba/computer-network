@@ -9,7 +9,7 @@
 ### 第一次握手
 client发送一个SYN(J)包给server，然后等待server的ACK回复，进入SYN-SENT状态。p.s: SYN为synchronize的缩写，ACK为acknowledgment的缩写。
 
-###第二次握手
+### 第二次握手
 server接收到SYN(seq=J)包后就返回一个ACK(J+1)包以及一个自己的**SYN(K)**包，然后等待client的ACK回复，server进入SYN-RECIVED状态。
 
 ### 第三次握手
@@ -54,7 +54,7 @@ server向client发送FIN(N)包，请求关闭连接，同时server进入LAST-ACK
 ### 第四次挥手
 client收到server发送的FIN(N)包，进入TIME-WAIT状态。
 向server发送**ACK(N+1)**包，server收到client的ACK(N+1)包以后，进入CLOSE状态；
-client等待一段时间还没有得到回复后判断server已正式关闭，进入CLOSE状态。
+client`等待一段时间还没有得到回复后`判断server已正式关闭，进入CLOSE状态。
 
  
 
